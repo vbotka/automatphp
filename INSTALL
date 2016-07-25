@@ -1,0 +1,80 @@
+automatPHP
+https://github.com/vbotka/automatphp
+
+*** SETUP NOTES
+
+1. create database
+# mysqladmin create automatphp
+
+2. start mysql and use mysql database
+
+3. grant access to automatphp and admin (if does not exist)
+mysql> grant file on *.* to admin@localhost identified by 'admin';
+mysql> grant all privileges on automatphp.* to admin@localhost identified by 'admin' with grant option;
+mysql> grant all privileges on automatphp.* to automatphp@localhost identified by 'automatphp';
+
+Admin and user accounts are stored in admin/classes/adminsessions.php and usr/classes/UsrSessions.php
+Change the password for admin in admin/classes/adminsessions.php
+Change the password for automatphp in usr/classes/UsrSessions.php
+
+4. change to automatphp
+mysql> \u automatphp
+
+5. create tables
+
+mysql>  create table actsessions (
+	sid integer unsigned,
+	seshid varchar(32) not null primary key,
+	uid integer unsigned,
+	cid integer unsigned,
+	lastused integer unsigned,
+	state integer(5) default '0',
+	statefrom integer(5) default '0',
+	dbglevel integer(2) default '0',
+	remoteip varchar(32),
+	remotehost varchar(255),
+	uvalid integer(1) default '0',
+	confirmjpeg text);
+
+mysql>  create table debuglog (
+	time integer unsigned,
+	sid integer unsigned,
+	uid integer unsigned,
+	err integer(5),
+	msg varchar(255));
+
+6. link webserver data path to automatPHP directory
+
+7. load http://localhost/admin/automat.php into the browser
+
+8. create tables
+   if there is an error in reading the *.tab files
+   - check if the files are readable by Apache/MySQL, and/or
+   - check if the FILE priviledge is set for admin
+
+8a.UBUNTU 16.04
+   /etc/mysql/mysql.cnf
+   [mysqld]
+   secure-file-priv="/var/www/html/conf/"
+   > usermod -a -G www-data mysql
+   > grep www /etc/apparmor.d/usr.sbin.mysqld
+     /var/www/html/conf/ r,
+     /var/www/html/conf/** r,
+
+9. load http://localhost/usr/automat.php into the browser
+
+10. if everything works
+    - link web server data directory to automatPHP/usr directory
+    - try http://localhost
+
+
+*** CLEANUP
+
+1. mysqladmin drop automatphp
+
+2. start mysql and use mysql database
+
+3. delete users (if not needed anymore)
+mysql> delete from user where User = "admin";
+mysql> delete from user where User = "automatphp";
+--

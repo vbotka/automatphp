@@ -1,0 +1,28 @@
+err_no modul                      description
+
+note: MySQL errors 100-199 not loged in table 'debuglog'
+101    classes/adminsessions.php  Can not connect to MySQL.
+102    classes/adminsessions.php  Can not select database.
+103    classes/adminsessions.php  Can not SELECT FROM actsessions.
+
+note: loged in table 'debuglog'
+201    classes/adminsessions.php  Session id not valid.
+202    classes/adminsessions.php  Session has expired.
+203    classes/adminsessions.php  Reset time failed. Update actsessions error.
+204    classes/adminsessions.php  Cleanup failed. Delete from actsessions error.
+205    classes/adminsessions.php  Cleanup failed. Select from actsessions failed.
+206    classes/adminsessions.php  AutomatSwitchState query failed.
+207    admin/automat.php          Default state reached error.
+301    fnc/sqlcleardebuglog.php   SQL delete from debuglog failed.
+302    fnc/sqlclearactsessions.php  SQL delete from actsessions failed.
+303    fnc/sqlchangedebuglevel.php  SQL update actsessions failed.
+304    action5.php                Select from actsessions failed.
+901    classes/adminsessions.php  DbgAddSqlLog failed. Can not insert into debuglog.
+999    classes/adminsessions.php  Returned from DbgAddSqlLog.
+
+******************common errors of usr and admin class
+
+207    classes/usrsessions.php	Query error  usrautomat table.
+208    classes/usrsessions.php	Can not fetch automat state from usrautomat table.
+209    classes/usrsessions.php	Query error  usrautomat table.
+210    classes/usrsessions.php	Can not fetch automat state from usrautomat table.

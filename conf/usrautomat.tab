@@ -1,0 +1,27 @@
+0	1	10	0	none	session-created
+10	0	10	0	none	error
+10	1	10	2	about us	Home page
+10	2	999999	1	site map	Site map
+10	3	20	2	menu1	Menu 1
+10	4	30	2	menu2	Menu 2
+10	6	50	2	menu3	Menu 3
+10	5	60	2	menu4	Menu 4
+10	9	40	1	contact 	Contact Information
+20	1	20	2	menu1	Menu 1
+20	2	999999	1	site map	Site map
+20	9	40	1	contact 	Contact Information
+30	1	30	2	menu2	Menu 2
+30	2	999999	1	site map	Site map
+30	9	40	1	contact 	Contact Information
+40	1	10	1	about us	Home page
+40	2	999999	1	site map	Site map
+40	9	40	1	contact 	Contact Information
+50	1	50	2	menu3	Menu 3
+50	2	999999	1	site map	Site map
+50	9	40	1	contact 	Contact Information
+60	1	60	2	menu4	Menu 4
+60	2	999999	1	site map	Site map
+60	9	40	1	contact 	Contact Information
+999999	10	10	1	about us	Home page
+999999	999999	999999	1	site map	Site map
+999999	40	40	1	contact 	Contact Information

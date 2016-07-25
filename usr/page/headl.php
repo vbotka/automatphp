@@ -1,0 +1,5 @@
+<TABLE WIDTH=100% BORDER=0>
+<TR><TD>
+<SMALL><SUP>foo.bar RELEU 1.0</SUP></SMALL>
+</TD></TR>
+</TABLE>

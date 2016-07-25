@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "By Invitation Only"
+AuthUserFile /usr/local/www/htpasswd
+Require user admin
+

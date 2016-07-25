@@ -1,0 +1,31 @@
+/*
+#ffe7ba wheat1
+#eed8ae wheat2
+#cdba96 wheat3
+#8b7e66 wheat4
+
+#7fffd4 aquamarine1
+#76eec6 aquamarine2
+#66cdaa aquamarine3
+#458b74 aquamarine4
+*/
+
+FONT            {FONT-FAMILY: sans-serif; FONT-SIZE: 12pt}
+BODY            {FONT-FAMILY: sans-serif; FONT-SIZE: 12pt; BACKGROUND: #76eec6; COLOR: #000000}
+P               {MARGIN-LEFT: 2em; MARGIN-RIGHT: 2em; MARGIN-BOTTOM: 5px; COLOR: #000000}
+B               {FONT-WEIGHT: bold}
+INPUT           {FONT-FAMILY: sans-serif; FONT-SIZE: 10pt; FONT-WEIGHT: bold}
+TEXTAREA        {FONT-FAMILY: sans-serif; FONT-SIZE: 12pt}
+FORM            {FONT-FAMILY: sans-serif; FONT-SIZE: 12pt}
+H1              {FONT-FAMILY: sans-serif; FONT-SIZE: 16pt; FONT-WEIGHT: bold; COLOR: #534b3c; MARGIN-LEFT: 2em}
+H2              {FONT-FAMILY: sans-serif; FONT-SIZE: 15pt; FONT-WEIGHT: bold; COLOR: #534b3c; MARGIN-LEFT: 2em}
+H3		{FONT-FAMILY: sans-serif; FONT-SIZE: 14pt; FONT-WEIGHT: bold; COLOR: #534b3c; MARGIN-LEFT: 2em}
+H4              {FONT-FAMILY: sans-serif; FONT-SIZE: 13pt; FONT-WEIGHT: bold; COLOR: #534b3c; MARGIN-LEFT: 2em}
+H5              {FONT-FAMILY: sans-serif; FONT-SIZE: 12pt; FONT-WEIGHT: bold; COLOR: #534b3c; MARGIN-LEFT: 2em}
+H6              {FONT-FAMILY: sans-serif; FONT-SIZE: 11pt; FONT-WEIGHT: bold; COLOR: #534b3c; MARGIN-LEFT: 2em}
+H7              {FONT-FAMILY: sans-serif; FONT-SIZE:  9pt; FONT-WEIGHT: bold; COLOR: #534b3c; MARGIN-LEFT: 2em}
+A:link          {BACKGROUND: none; COLOR: #458b74;}
+A:active        {BACKGROUND: none; COLOR: #000000;}
+A:visited       {BACKGROUND: none; COLOR: #458b74;}
+A:hover         {BACKGROUND: none; COLOR: #000000;}
+.tiny           {FONT-SIZE: 9pt; FONT-WEIGHT: normal; TEXT-DECORATION: none}
